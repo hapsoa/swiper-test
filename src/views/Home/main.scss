@@ -1,0 +1,127 @@
+@import '../../style/_common.scss';
+
+.get-in-touch-zone {
+  background: #36d8c1;
+  padding: 60px 314px;
+  .v-btn {
+    height: 70px !important;
+  }
+  .text-area-zone {
+    .v-text-field__slot {
+      min-height: 300px !important;
+    }
+  }
+}
+.teachers-languages-inform-zone {
+  background: white;
+  padding: 90px 0;
+}
+.teacher-name-zone {
+  font-size: 26px;
+}
+.teacher-view-btn-zone {
+  height: 80px;
+}
+.teacher-view-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 80px;
+  font-size: 18px;
+}
+.teacher-status-m {
+  font-size: 16px;
+}
+.new-teacher-alert {
+  height: 50px;
+}
+.tag-grid {
+  border-radius: 24px;
+  padding: 0 12px 2px;
+  font-size: 16px;
+  color: #36d8c1;
+  line-height: 28px;
+  border: solid 1px #36d8c1;
+  margin: 0 4px;
+}
+.new-teacher-alert {
+  width: 76px;
+}
+.photo {
+  background: url('');
+}
+.teacher-photo-grid {
+  border-radius: 50%;
+  width: 192px;
+  height: 192px;
+  background: rgba($color: #000000, $alpha: 0.3);
+  background-size: cover;
+  background-position: center;
+}
+
+.teacher-card {
+  width: 100%;
+  background: white;
+}
+.teacher-card-zone {
+  width: 408px;
+}
+.meditation-teacher-zone {
+  background: #f9fafd;
+  font-size: 32px;
+}
+.white-back-content {
+  margin: auto;
+  text-align: center;
+  max-width: 960px;
+  padding: 100px 24px;
+}
+.white-back-zone {
+  background: white;
+  font-size: 42px;
+  line-height: 70px;
+}
+.login-banner-content {
+  max-width: 198px;
+  overflow: hidden;
+}
+.login-banner-icon {
+  font-size: 40px;
+}
+.login-banner {
+  background: #0f1c2c;
+  position: absolute;
+  padding: 40px;
+  color: white;
+  font-size: 16px;
+  bottom: -30px;
+  right: 40px;
+  z-index: 100;
+}
+display-f {
+  display: flex;
+}
+.banner-arrow {
+  font-size: 16px;
+}
+
+.banner-wrapper {
+  height: 624px;
+  position: relative;
+}
+.banner-left-grid {
+  background: #0f1c2c;
+  display: flex;
+  .banner-text {
+    margin: auto;
+    color: white;
+    font-size: 50px;
+    max-width: 760px;
+  }
+}
+.banner-right-grid {
+  background: url('https://cdn.zeplin.io/5c73f3a1442e4c4061f84b98/assets/09A1DBF1-2571-4AD7-BA8D-90079B81B9A4.png');
+  overflow: hidden;
+  background-size: cover;
+}
