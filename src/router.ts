@@ -19,6 +19,11 @@ export default new Router({
       component: () => import('./views/BasicSwiper/BasicSwiper.vue'),
     },
     {
+      path: '/multiple-swiper',
+      name: 'multiple-swiper',
+      component: () => import('./views/MultipleSwiper/MultipleSwiper.vue'),
+    },
+    {
       path: '/swiper-click-test',
       name: 'swiper-click-test',
       component: () => import('./views/SwiperClickTest/SwiperClickTest.vue'),

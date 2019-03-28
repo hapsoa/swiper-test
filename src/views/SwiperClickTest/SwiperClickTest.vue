@@ -1,3 +1,4 @@
+// 안되는거 같음. stack overflow 보니
 <template>
   <div id="slider">
     <swiper :options="swiperOption" ref="swiper" @click.native="sliderClicked">

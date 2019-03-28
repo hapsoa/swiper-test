@@ -1,13 +1,8 @@
 <template>
-  <div class="basic-swiper">
-    <div class="swiper-container">
+  <div class="swiper-root">
+    <div class="swiper-container" ref="swiperContainer">
       <div class="swiper-wrapper">
-        <div
-          v-for="i in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
-          :key="i"
-          class="swiper-slide"
-          @click="clickSlide(i)"
-        >Slide {{i}}</div>
+        <slot></slot>
       </div>
       <!-- Add Pagination -->
       <div class="swiper-pagination"></div>
@@ -15,29 +10,37 @@
       <!-- <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>-->
     </div>
-    <div class="swiper-button-prev-unique">aa</div>
-    <div class="swiper-button-next-unique">bb</div>
+    <!-- <div class="swiper-button-prev-unique">aa</div>
+    <div class="swiper-button-next-unique">bb</div>-->
   </div>
 </template>
 
-<script lang='ts' src='./BasicSwiper.ts' />
+<script src="./SwiperComponent.ts" lang='ts'/>
 
 <style scoped lang='scss'>
-// @import "../../../node_modules/swiper/dist/css/swiper.min.css";
-
-.basic-swiper {
+.swiper-root {
   // margin: 50px;
   width: 100%;
   // height: 500px;
-  border: 1px solid blue;
-  // position: relative;
+  // border: 1px solid blue;
+  position: relative;
 }
-
 .swiper-container {
   position: relative;
-  width: 700px;
+  width: 100%;
   height: 100%;
-  border: 1px solid yellow;
+  // border: 1px solid yellow;
+}
+
+.swiper-button-prev-unique {
+  position: absolute;
+  left: -60px;
+  top: 230px;
+}
+.swiper-button-next-unique {
+  position: absolute;
+  right: -60px;
+  top: 230px;
 }
 
 .swiper-slide {
@@ -58,21 +61,9 @@
   -webkit-align-items: center;
   align-items: center;
 
-  border: 1px solid green;
+  // border: 1px solid green;
   box-sizing: border-box;
-  height: 500px;
-  width: 100px;
-}
-
-.swiper-button-prev-unique {
-  position: absolute;
-  left: 120px;
-  top: 230px;
-}
-.swiper-button-next-unique {
-  position: absolute;
-  right: 120px;
-  top: 230px;
+  // height: 500px;
 }
 
 .swiper-button-next {
